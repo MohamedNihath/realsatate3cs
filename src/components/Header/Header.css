@@ -1,0 +1,24 @@
+.h-wrpper{
+
+    background: var(--black);
+    color: white;
+}
+
+.h-container{
+
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+    
+}
+
+.h-menu{
+
+    gap: 2rem;
+    display: flex;
+}
+
+h-menu>*:hover{
+    cursor: pointer;
+}
