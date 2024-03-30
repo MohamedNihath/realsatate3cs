@@ -5,26 +5,19 @@ const Header = () => {
   return (
     <div>
 
-        <section className='h-wrpper'>
+        <section className='h-wrapper'>
 
-          <div className="flexCenter padding innerwidth h-container" >
-
+          <div className="flexCenter paddings innerWidth h-container" >
             <img src='logo.png' alt='logo' width={100}/>
-
-                <div  className="h-menu">
-
-                      <a href=''>Residence</a>
-                      <a href=''>Our Value</a>
-                      <a href=''>Conduct Us</a>
-                      <a href=''>Get Started</a>
-
-                      <button className='btn'> 
-                         <a href=''>Conduct</a>
-
-                             </button>
-                      
-
-                </div>
+            <div  className="h-menu">
+              <a href=''>Residence</a>
+              <a href=''>Our Value</a>
+              <a href=''>Conduct Us</a>
+              <a href=''>Get Started</a>
+              <button className='btn'> 
+                  <a href=''>Conduct</a>
+              </button>
+            </div>
 
           </div>
 

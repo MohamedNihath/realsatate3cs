@@ -1,5 +1,4 @@
-.h-wrpper{
-
+.h-wrapper{
     background: var(--black);
     color: white;
 }
@@ -14,9 +13,9 @@
 }
 
 .h-menu{
-
     gap: 2rem;
     display: flex;
+    align-items: center;
 }
 
 h-menu>*:hover{
