@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './components/Header/Header';
-
+import Hero from './components/Hero/Hero';
 
 
 
@@ -14,7 +14,7 @@ const App = () => {
         <div>
           <div className='white-gradient'/>
           <Header/>
-          
+          <Hero/>
         </div>
         
         
