@@ -16,11 +16,12 @@ const Hero = () => {
                 <div className='orange-cercle'></div>
                 <motion.h1
 
-                initial={{y:"2rem" , opacity: 0}}
-                animate={{ y: "0", opacity: 1 }}
-                transition={{duration: 2, delay: 0.5}}
-
-                
+                  initial={{y:"2rem" , opacity: 0}}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{
+                    duration: 2, 
+                    type:"spring"
+                  }}
                 >
                   Discover <br />
                   Most Suitable <br />
@@ -39,7 +40,15 @@ const Hero = () => {
               </div>
 
               <div>
-                <div className='hero-count'>
+                <motion.div
+                  initial={{y:"-4rem" , opacity: 0}}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{
+                    duration: 2, 
+                    type:"spring"
+                  }}
+                
+                className='hero-count'>
                   <div className='flexcolstart'>
                     <span>
                         <CountUp start={8800} end={9000} duration={4} />
@@ -63,14 +72,22 @@ const Hero = () => {
                     </span>
                     <span className='seconderytext'>Winning Award</span>                     
                   </div>
-                </div>
+                </motion.div>
               </div>
           </div>
 
           <div className='flexCenter hero-right'>
-            <div className="img-container">
+            <motion.div 
+            initial={{x:"7rem" , opacity: 0}}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 2, 
+              type:"spring"
+            }}
+
+            className="img-container">
               <img src='./hero-image.png' alt='Hero Image'/>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

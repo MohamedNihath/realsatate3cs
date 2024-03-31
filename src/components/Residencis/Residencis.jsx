@@ -1,26 +1,35 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Swiper, SwiperSlide, useSwiper} from  "swiper/react";
 import "swiper/css";
 import './Residencis.css';
 import Data from '../../utils/slider.json'
 import { sliderSettings } from '../../utils/common';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Residencis = () => {
+
+  useEffect(()=>{
+    Aos.init();
+
+  },[])
+
+
   return (
   
     <section className='r-wrapper'>
 
       <div className='paddings innerWidth r-container'>
-          <div className='r-head flexColStart'>
+          <div className='flexColStart r-head' data-aos="fade-down" data-aos-duration="2000">
 
             <span className='orangeText'>Best Choice</span>
             <span className='primaryText'>Popular recidencies</span>
 
           </div>
 
-          <Swiper {...sliderSettings} className='swiper'>
-            <SliderButtons/>
+          <Swiper {...sliderSettings} className='swiper' data-aos="fade-up" data-aos-duration="2000">
+            
                 {
                   Data.map((card,i)=>
                     <SwiperSlide key={i} >
@@ -36,6 +45,7 @@ const Residencis = () => {
                     </SwiperSlide>
                   )
                 }
+                <SliderButtons/>
           </Swiper>
 
       </div>

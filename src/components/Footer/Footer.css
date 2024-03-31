@@ -14,3 +14,16 @@
     margin-top: 1.5rem;
     font-weight: 500;
 }
+
+@media (max-width:768px) {
+    .f-wrapper{
+        padding: 0 1rem 0;
+    }
+    .f-container{
+        justify-content: center;
+    }
+    .f-container>div{
+        align-items: center!important;
+        text-align: center;
+    }
+}

@@ -60,6 +60,7 @@
     scale: 1.1;
     box-shadow: var(--shadow);
 }
+
 .mode .btn:hover{
 
     background: var(--blue-gradient);
@@ -69,4 +70,39 @@
 
 .small{
     font-size: 18px;
+}
+
+@media (max-width:1024px) {
+    .c-container{
+        flex-direction: column;
+    }
+
+    .c-right{
+        justify-content: center;
+    }
+
+    .contactModes{
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 635px) {
+        .c-wrapper{
+            padding: 1rem 1rem;
+        }
+        
+        .conduct-img{
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .c-wrapper{
+            padding: 1rem 1rem;
+        }
+    }
 }

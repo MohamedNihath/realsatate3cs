@@ -1,14 +1,22 @@
-
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Footer.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 const Footer = () => {
+
+    useEffect(()=>{
+        Aos.init();
+    
+      },[])
+
   return (
     
     <section className='f-wrapper'>
         <div className='paddings innerWidth flexCenter f-container'>
 
-            <div className='flexColStart f-left'>
+            <div className='flexColStart f-left' data-aos="fade-right" data-aos-duration="2000">
                 
                 <img src='logo2.png' alt="" width={120} />
 
@@ -17,7 +25,7 @@ const Footer = () => {
 
                 </span>
             </div>
-            <div className="flexColStart f-right">
+            <div className="flexColStart f-right" data-aos="fade-left" data-aos-duration="2000">
                 <span className='primaryText'> Information</span>
                 <span className='secondaryText'> Colombo Rajagiriye 12</span>
                 <div className='flexCenter f-menu'>

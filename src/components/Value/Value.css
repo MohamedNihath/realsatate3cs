@@ -61,3 +61,24 @@
 
 } 
 
+@media (max-width:1024px){
+    .v-container{
+        
+        flex-direction: column;
+        padding: 5rem 7rem 0;
+    }
+
+    @media (max-width:768px){
+        .v-container{
+            align-items: center;
+            display: flex;
+            padding: 5rem 1rem;
+        }
+
+        .accordionButton .primaryText{
+            font-size: 0.8rem;
+        }
+    }
+
+}
+

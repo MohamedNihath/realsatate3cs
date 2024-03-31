@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -11,18 +11,26 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { MdOutlineArrowDropDown } from 'react-icons/md';
 import data from '../../utils/accordion';
 import './Value.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Value = () => {
+
+  useEffect(()=>{
+    Aos.init();
+
+  },[])
+
   const [className, setClassName] = useState('null');
   return (
     <section className='v-wrapper'>
       <div className='paddings innerWidth flexCenter v-container'>
-        <div className='v-left'>
+        <div className='v-left' data-aos="fade-right" data-aos-duration="2000">
           <div className='img-container'>
             <img src='./value.png' alt='' />
           </div>
         </div>
-        <div className='flexColStart v-right'>
+        <div className='flexColStart v-right' data-aos="fade-left" data-aos-duration="2000">
           <span className='orangeText'>Our Value</span>
           <span className='primaryText'>Value We Give to You</span>
           <span className='secondaryText'>
