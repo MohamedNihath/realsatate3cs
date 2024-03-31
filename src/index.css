@@ -1,4 +1,4 @@
-:root {
+ :root {
   --primary: #1f3e72;
   --secondary: rgba(255, 255, 255, 0.78);
   --black: #131110;
@@ -97,9 +97,12 @@ a {
 .btn:hover{
   cursor: pointer;
   transform: scale(1.1);
-}
-/* media queries */
-@media (min-width: 1536px) {
+} 
+
+ 
+       /* @ Media Query */
+
+ @media (min-width: 1536px) {
   .innerWidth {
     max-width: 1280px;
     margin: auto;
@@ -126,3 +129,7 @@ a {
     font-size: 1.2rem;
   }
 }
+
+ 
+
+
